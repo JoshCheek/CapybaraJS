@@ -38,8 +38,11 @@ group :development, :test do
   gem 'pry'
   gem 'byebug'
   gem 'rspec-rails'
+end
+
+group :test do
   gem 'capybara'
-  gem 'selenium-webdriver'
+  gem 'poltergeist', require: 'capybara/poltergeist'
 end
 
 group :development do
